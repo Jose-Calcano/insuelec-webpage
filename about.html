@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width\, 
+    initial-scale=1.0">
+    <title>Insuelec</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imagenes/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">BRANDS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> About Us</h1>
+
+</section>
+
+<!-------------------------------------------------------------->
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>World's Largest University</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Dignissim cras tincidunt lobortis feugiat vivamus at augue. Accumsan sit amet nulla facilisi. Cursus sit amet dictum sit.
+            </p>
+            <a href="" class="hero-btn blue-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="imagenes/about.jpeg">
+        </div>
+    </div>
+
+</section>
+
+<!-------------------------------------------------------------->
+
+<section class="footer">
+
+    <h4>About Us</h4>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Dis parturient montes nascetur ridiculus.</p>
+    <div class="icons">
+        <a href="https://www.instagram.com/insuelec/"><i class="fa fa-instagram"></i> </a>
+        <a href="https://www.linkedin.com/company/insuelec"> <i class="fa fa-linkedin"></i> </a>
+        <a href="https://wa.me/message/PY5J4R2KABXUG1"><i class="fa fa-whatsapp"></i></a>
+    </div>
+
+</section>
+
+<!-------------------------------------------------------------->
+
+<script src="https://kit.fontawesome.com/ebed9afc8c.js" crossorigin="anonymous"></script>
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
