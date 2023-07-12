@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width\, 
+    initial-scale=1.0">
+    <title>Insuelec</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imagenes/Logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">BRANDS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+
+</section>
+
+<!-------------------------------------------------------------->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114018.46868004958!2d-80.2114407474998!3d26.741914139472975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d5ccb595adc1%3A0x15efc7b51fe16bde!2sWest%20Palm%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1689112695894!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>West Palm Beach, Florida</h5>
+                        <p>United States</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+1 (561) 410-9664</h5>
+                        <p>Monday to saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>insuelec@insuelec.com</h5>
+                        <p>Email us you query</p>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="contact-col">
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                    <input type="text" name="org" placeholder="Organization">
+                    <textarea rows="8" name="reason" placeholder="Reason Contacting Us"></textarea>
+                    <textarea rows="8" name="lead" placeholder="How did you hear about us"></textarea>
+                    <button type="submit" class="hero-btn blue-btn">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+</section>
+
+
+<!-------------------------------------------------------------->
+
+<section class="footer">
+
+    <h4>About Us</h4>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Dis parturient montes nascetur ridiculus.</p>
+    <div class="icons">
+        <a href="https://www.instagram.com/insuelec/"><i class="fa fa-instagram"></i> </a>
+        <a href="https://www.linkedin.com/company/insuelec"> <i class="fa fa-linkedin"></i> </a>
+        <a href="https://wa.me/message/PY5J4R2KABXUG1"><i class="fa fa-whatsapp"></i></a>
+    </div>
+
+</section>
+
+<!-------------------------------------------------------------->
+
+<script src="https://kit.fontawesome.com/ebed9afc8c.js" crossorigin="anonymous"></script>
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
